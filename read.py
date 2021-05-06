@@ -7,4 +7,8 @@ with open('reviews.txt', 'r') as f:
 			print(data[count])
 			print('---------------------------------------------------------------------------')
 		count += 1
-print(len(data))
+sum_len = 0
+for  y in data:
+	sum_len += len(y)
+print('檔案讀取完了，共', len(data), '筆留言')
+print('每筆留言平均為', sum_len / len(data))
